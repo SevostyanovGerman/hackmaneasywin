@@ -25,8 +25,9 @@ public class RecognitionService {
 //    }
 
 
-	public static String getPersonVkUrl() {
+	public static String[] getPersonVkUrl() {
 		WebDriver driver = new ChromeDriver();
+		String clientVkPhoto;
 		driver.get("https://findface.ru/");
 
 
@@ -105,7 +106,7 @@ public class RecognitionService {
 				.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button[ng-click=\"goVkProfileUser(userData)\"]")));
 
 		driver.findElement(By.cssSelector("button[ng-click=\"goVkProfileUser(userData)\"]")).click();
-
+		clientVkPhoto = driver.findElement(By.cssSelector("img.fotorama__img")).getAttribute("src");
 		(new WebDriverWait(driver, 100))
 				.until(ExpectedConditions.numberOfWindowsToBe(2));
 
@@ -121,7 +122,7 @@ public class RecognitionService {
 		driver.close();
 		driver.quit();
 
-		return currUrl;
+		return new String[]{currUrl,clientVkPhoto};
 	}
 
 	public static String[] getPersonAudio(String id) throws InterruptedException {

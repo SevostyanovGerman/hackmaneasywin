@@ -8,6 +8,7 @@ public class Client {
 	private String phoneNumber;
 	private String age;
 	private List<String> audios;
+	private String vkPhotoUrl;
 
 	public Client(String vkId, Long id) {
 		this.vkId = vkId;
@@ -58,5 +59,13 @@ public class Client {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getVkPhotoUrl() {
+		return vkPhotoUrl;
+	}
+
+	public void setVkPhotoUrl(String vkPhotoUrl) {
+		this.vkPhotoUrl = vkPhotoUrl;
 	}
 }

@@ -32,9 +32,12 @@ public class RecognizeController {
 	@ResponseStatus(code = HttpStatus.ACCEPTED)
 	public Long processClient() throws IOException, InterruptedException {
 		PhotoService.takePhoto();
-		String vkUrl = RecognitionService.getPersonVkUrl();
+		String[] personInfo = RecognitionService.getPersonVkUrl();
+		String vkUrl = personInfo[0];
+		String photoUrl = personInfo[1];
 		String id = vkUrl.substring(vkUrl.indexOf("id")+2);
 		Client client = new Client(id, IdGenerator.getID());
+		client.setVkPhotoUrl(photoUrl);
 		userDao.addClient(client);
 		new Thread(() -> {
 			try {
@@ -57,5 +60,9 @@ public class RecognizeController {
 		musicService.stopMusic();
 	}
 
+	@GetMapping("/getPhotoUrl/{id}")
+	public ResponseEntity<String> getPhotoUrl(@PathVariable("id") Long id) {
 
+		return ResponseEntity.ok(userDao.getClientById(id).getVkPhotoUrl());
+	}
 }
