@@ -1,26 +1,29 @@
 package com.example.hackmaneasywindemo.model;
 
+import java.util.List;
+
 public class Client {
-	private String vkUrl;
+	private String vkId;
 	private String phoneNumber;
 	private String age;
+	private List<String> audios;
 
-	public Client(String vkUrl) {
-		this.vkUrl = vkUrl;
+	public Client(String vkId) {
+		this.vkId = vkId;
 	}
 
-	public Client(String vkUrl, String phoneNumber, String age) {
-		this.vkUrl = vkUrl;
+	public Client(String vkId, String phoneNumber, String age) {
+		this.vkId = vkId;
 		this.phoneNumber = phoneNumber;
 		this.age = age;
 	}
 
-	public String getVkUrl() {
-		return vkUrl;
+	public String getVkId() {
+		return vkId;
 	}
 
-	public void setVkUrl(String vkUrl) {
-		this.vkUrl = vkUrl;
+	public void setVkId(String vkId) {
+		this.vkId = vkId;
 	}
 
 	public String getPhoneNumber() {
@@ -37,5 +40,13 @@ public class Client {
 
 	public void setAge(String age) {
 		this.age = age;
+	}
+
+	public List<String> getAudios() {
+		return audios;
+	}
+
+	public void setAudios(List<String> audios) {
+		this.audios = audios;
 	}
 }

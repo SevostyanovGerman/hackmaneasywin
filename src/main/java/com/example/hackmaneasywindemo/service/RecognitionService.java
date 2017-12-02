@@ -119,27 +119,8 @@ public class RecognitionService {
         return driver.getCurrentUrl();
     }
 
-    public static String[] getPersonAudio() throws InterruptedException {
-
-        driver.findElement(By.cssSelector("#profile_audios > a.module_header")).click();
-        JavascriptExecutor jse = ((JavascriptExecutor) driver);
-
-        for (int i = 0; i < 3; i++) {
-        Thread.sleep(1000);
-            jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-        }
-        Thread.sleep(1000);
-
-        List<WebElement> audioWrappers = driver.findElements(By.cssSelector(".audio_row_with_cover"));
-
-        String[] audios = new String[audioWrappers.size()];
-
-        for (int i = 0; i < audios.length; i++) {
-            String wrapperClass = audioWrappers.get(i).getAttribute("class");
-            audios[i] = driver.findElement(By.cssSelector("."+wrapperClass.replaceAll(" ",".") + " " + ".audio_row__title_inner._audio_row__title_inner")).getText() + " - " + driver.findElement(By.cssSelector("."+wrapperClass.replaceAll(" ",".") + " " + "a[onmouseover=\"setTitle(this)\"]")).getText();
-        }
-
-
-        return  audios;
+    public static String[] getPersonAudio(String id) throws InterruptedException {
+        String[] strings = new String[10];
+        return strings;
     }
 }
