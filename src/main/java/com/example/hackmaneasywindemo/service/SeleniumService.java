@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Set;
 
 
-public class FindFaceService {
+public class SeleniumService {
 
     public static WebDriver driver = new ChromeDriver();
 
@@ -120,11 +120,6 @@ public class FindFaceService {
     }
 
     public static String[] getPersonAudio() throws InterruptedException {
-
-
-
-
-
 
         driver.findElement(By.cssSelector("#profile_audios > a.module_header")).click();
         JavascriptExecutor jse = ((JavascriptExecutor) driver);
