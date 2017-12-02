@@ -12,24 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HackmaneasywindemoApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/HackmaneasywindemoApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-              <folding>
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#413#414#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RecognizeController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/controller/RecognizeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="434">
+              <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,27 +111,41 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/model/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="1026">
+              <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
               <folding>
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#413#414#0" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-                <element signature="e#526#527#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#739#740#0" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
+                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#474#475#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+                <element signature="e#726#727#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#818#819#0" expanded="true" />
+                <element signature="e#838#839#0" expanded="true" />
+                <element signature="e#885#886#0" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+                <element signature="e#1002#1003#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IdGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/IdGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <folding>
+                <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#166#167#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,8 +156,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -180,13 +181,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/service/AudioService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/service/Иф.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/service/BackgroundService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/model/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/UserDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/service/RecognitionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/controller/RecognizeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/service/BackgroundServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/dao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/model/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/IdGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/controller/RecognizeController.java" />
       </list>
     </option>
   </component>
@@ -491,7 +493,7 @@
       <option name="presentableId" value="Default" />
       <updated>1512221952690</updated>
       <workItem from="1512221954082" duration="762000" />
-      <workItem from="1512222857559" duration="5030000" />
+      <workItem from="1512222857559" duration="6270000" />
     </task>
     <servers />
   </component>
@@ -501,7 +503,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5792000" />
+    <option name="totallyTimeSpent" value="7032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -509,11 +511,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28109452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -529,7 +531,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39925373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -550,8 +552,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/controller/RecognizeController.java</url>
+          <line>37</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/controller/RecognizeController.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/controller/RecognizeController.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/controller/RecognizeController.java</url>
           <line>34</line>
           <properties />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/dao/UserDaoImpl.java</url>
@@ -562,7 +582,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -719,37 +739,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/IdGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/model/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="1026">
+          <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
           <folding>
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/hackmaneasywindemo/controller/RecognizeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="434">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,5 +1,6 @@
 package com.example.hackmaneasywindemo.controller;
 
+import com.example.hackmaneasywindemo.IdGenerator;
 import com.example.hackmaneasywindemo.dao.UserDao;
 import com.example.hackmaneasywindemo.model.Client;
 import com.example.hackmaneasywindemo.service.BackgroundService;
@@ -7,7 +8,9 @@ import com.example.hackmaneasywindemo.service.PhotoService;
 import com.example.hackmaneasywindemo.service.RecognitionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,14 +28,14 @@ public class RecognizeController {
 
 	@GetMapping("/processClient")
 	@ResponseStatus(code = HttpStatus.ACCEPTED)
-	public void processClient() throws IOException, InterruptedException {
+	public Long processClient() throws IOException, InterruptedException {
 		PhotoService.takePhoto();
 		String vkUrl = RecognitionService.getPersonVkUrl();
 		String id = vkUrl.substring(vkUrl.indexOf("id"+2));
-		Client client = new Client(id);
+		Client client = new Client(id, IdGenerator.getID());
 		userDao.addClient(client);
 		backgroundService.loadClientAudios(client);
-		System.out.println(vkUrl);
+		return client.getId();
 	}
 
 
