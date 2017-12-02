@@ -13,13 +13,13 @@ import java.util.List;
 import java.util.Set;
 
 
-public class SeleniumService {
+public class RecognitionService {
 
     public static WebDriver driver = new ChromeDriver();
 
-    public static String vkLogin = "";
-    public static String vkPassword = "";
-    public static String filePath = "";
+    public static String vkLogin = "89118465234";
+    public static String vkPassword = "Test1234567";
+    public static String filePath = "/Users/anastasiavaskina/hackmaneasywin/test.png";
 
 //    public static void main(String[] args) throws InterruptedException {
 //        getPersonVkUrl();

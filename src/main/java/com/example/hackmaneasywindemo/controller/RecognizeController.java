@@ -1,5 +1,7 @@
 package com.example.hackmaneasywindemo.controller;
 
+import com.example.hackmaneasywindemo.service.PhotoService;
+import com.example.hackmaneasywindemo.service.RecognitionService;
 import com.github.sarxos.webcam.Webcam;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -17,19 +19,13 @@ import java.io.IOException;
 public class RecognizeController {
 
 
-	@GetMapping("/takePhoto")
+	@GetMapping("/processClient")
 	@ResponseStatus(code = HttpStatus.ACCEPTED)
-	public void takePhoto() throws IOException {
-		Webcam webcam = Webcam.getDefault();
-		webcam.setViewSize(new Dimension(640, 480));
-		webcam.open();
-
-		// get image
-		BufferedImage image = webcam.getImage();
-
-		// save image to PNG file
-		ImageIO.write(image, "PNG", new File("test.png"));
-
-		System.out.println("photo done");
+	public void processClient() throws IOException {
+		PhotoService.takePhoto();
+		String vkUrl = RecognitionService.getPersonVkUrl();
+		System.out.println(vkUrl);
 	}
+
+
 }
