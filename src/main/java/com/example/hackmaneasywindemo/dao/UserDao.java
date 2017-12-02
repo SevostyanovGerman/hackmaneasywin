@@ -5,5 +5,8 @@ import com.example.hackmaneasywindemo.model.Client;
 
 public interface UserDao {
 	void addClient(Client client);
-	void updateClient(Client client);
+
+	void updateClientAudio(Client client);
+
+	Client getClientById(Long id);
 }

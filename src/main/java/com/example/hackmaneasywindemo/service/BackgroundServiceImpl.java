@@ -21,6 +21,6 @@ public class BackgroundServiceImpl implements BackgroundService {
 	public void loadClientAudios(Client client) throws InterruptedException {
 		List<String> audios = Arrays.asList(RecognitionService.getPersonAudio(client.getVkId()));
 		client.setAudios(audios);
-		userDao.updateClient(client);
+		userDao.updateClientAudio(client);
 	}
 }
