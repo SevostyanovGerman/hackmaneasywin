@@ -1,9 +1,6 @@
 package com.example.hackmaneasywindemo.service;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,7 +26,6 @@ public class RecognitionService {
 
 
     public static String getPersonVkUrl(){
-
         driver.get("https://findface.ru/");
 
 
@@ -71,28 +67,33 @@ public class RecognitionService {
 
         driver.findElements(By.cssSelector("input[type='file']")).get(0).sendKeys(filePath);
 
-        (new WebDriverWait(driver, 100))
-                .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("rect")));
+
+        try {
+            (new WebDriverWait(driver, 10))
+                    .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("rect")));
 
 
-        List<WebElement> rects = driver.findElements(By.cssSelector("rect"));
+            List<WebElement> rects = driver.findElements(By.cssSelector("rect"));
 
-        WebElement personRect = null;
-        double size = 0;
+            WebElement personRect = null;
+            double size = 0;
 
-        for (WebElement rect: rects) {
-            double currSize = Double.valueOf(rect.getAttribute("width")) * Double.valueOf(rect.getAttribute("height"));
-            System.out.println(currSize);
-            if (currSize > size){
-                size = currSize;
-                personRect = rect;
+            for (WebElement rect: rects) {
+                double currSize = Double.valueOf(rect.getAttribute("width")) * Double.valueOf(rect.getAttribute("height"));
+                System.out.println(currSize);
+                if (currSize > size){
+                    size = currSize;
+                    personRect = rect;
+                }
             }
+
+            personRect.click();
+        } catch (TimeoutException exception){
+
         }
 
-        personRect.click();
-
-        (new WebDriverWait(driver, 100))
-                .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[ng-click=\"viewUserProfileFound(user)\"]")));
+        (new WebDriverWait(driver, 10))
+                .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("span.count.ng-binding")));
 
 
         WebElement element = driver.findElements(By.cssSelector("div[ng-click=\"viewUserProfileFound(user)\"]")).get(0);
