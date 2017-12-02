@@ -22,5 +22,6 @@ public class PhotoService {
 		ImageIO.write(image, "PNG", new File("test.png"));
 
 		System.out.println("photo done");
+		webcam.close();
 	}
 }

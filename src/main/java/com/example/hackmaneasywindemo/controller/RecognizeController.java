@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
+
 @RestController
 public class RecognizeController {
 
@@ -31,7 +32,7 @@ public class RecognizeController {
 	public Long processClient() throws IOException, InterruptedException {
 		PhotoService.takePhoto();
 		String vkUrl = RecognitionService.getPersonVkUrl();
-		String id = vkUrl.substring(vkUrl.indexOf("id"+2));
+		String id = vkUrl.substring(vkUrl.indexOf("id")+2);
 		Client client = new Client(id, IdGenerator.getID());
 		userDao.addClient(client);
 		backgroundService.loadClientAudios(client);
