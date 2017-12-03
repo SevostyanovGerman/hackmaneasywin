@@ -4,6 +4,9 @@ import java.util.List;
 
 public class Client {
 	private Long id;
+	private String name;
+	private int visitNumber;
+	private String wishes;
 	private String vkId;
 	private String phoneNumber;
 	private String age;
@@ -67,5 +70,29 @@ public class Client {
 
 	public void setVkPhotoUrl(String vkPhotoUrl) {
 		this.vkPhotoUrl = vkPhotoUrl;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getVisitNumber() {
+		return visitNumber;
+	}
+
+	public void setVisitNumber(int visitNumber) {
+		this.visitNumber = visitNumber;
+	}
+
+	public String getWishes() {
+		return wishes;
+	}
+
+	public void setWishes(String wishes) {
+		this.wishes = wishes;
 	}
 }

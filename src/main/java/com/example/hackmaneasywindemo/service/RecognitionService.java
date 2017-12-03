@@ -14,8 +14,10 @@ import java.util.Set;
 
 public class RecognitionService {
 
-	public static String vkLogin = "89118465234";
-	public static String vkPassword = "Test1234567";
+//	public static String vkLogin = "89118465234";
+//	public static String vkPassword = "Test1234567";
+	public static String vkLogin = "atetka@ya.ru";
+	public static String vkPassword = "testPass1";
 	public static String filePath = "/Users/anastasiavaskina/hackmaneasywin/test.png";
 
 //    public static void main(String[] args) throws InterruptedException {
