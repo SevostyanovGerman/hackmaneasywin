@@ -2,6 +2,7 @@ package com.example.hackmaneasywindemo.service;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.http.ResponseEntity;
@@ -28,10 +29,18 @@ public class RecognitionService {
 
 
 	public static String[] getPersonVkUrl() {
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("no-sandbox");
+		WebDriver driver = new ChromeDriver(options);
 		String clientVkPhoto;
-		driver.get("https://findface.ru/");
 
+
+		Point point = new Point(0,0);
+		driver.manage().window().setPosition(point);
+		Dimension dimension = new Dimension(850,1024);
+		driver.manage().window().setSize(dimension);
+
+		driver.get("https://findface.ru/");
 
 		(new WebDriverWait(driver, 100))
 				.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button[ng-click=\"login()\"]")));
